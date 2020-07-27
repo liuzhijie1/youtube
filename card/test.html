@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 测试position:relative */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            /* margin-top: 100px; */
+            position: relative;
+            background-color: red;
+            /* top: -20px;   */
+            /* display: block; */
+            /* top的位置虽然1调正了，但是占的元素还是不变的 */
+        }
+        .box1{
+            z-index: 1;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span>woshi</span>
+    <div class="box"></div>
+    <p>woshi</p>
+</body>
+</html>
